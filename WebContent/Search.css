@@ -1,0 +1,9 @@
+#search[type=text] {
+   
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#search[type=text]:focus {
+    width: 100%;
+}

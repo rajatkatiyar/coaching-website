@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="ISO-8859-1">
+<title>KV classes</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="map.css">
+<link rel="stylesheet" type="text/css" href="Mypannel.css">
+<link rel="stylesheet" type="text/css" href="navigation.css">
+<link rel="stylesheet" type="text/css" href="Search.css">
+<link rel="stylesheet" type="text/css" href="login.css">
+<script type="text/javascript" src="login.js"></script>
+<style>
+.jumbotron {
+	background-color: #f4511e;
+	color: #ffffff;
+	padding: 100px 25px;
+}
+
+.container-fluid {
+	padding: 60px 50px;
+}
+
+.logo {
+	font-size: 200px;
+	color: #f4511e;
+}
+
+.bg-grey {
+	background-color: #f6f6f6;
+}
+
+#logo-small {
+	color: #f4511e;
+	font-size: 50px;
+}
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+	color: #f4511e;
+}
+
+.carousel-indicators li {
+	border-color: #f4511e;
+}
+
+.carousel-indicators li.active {
+	background-color: #f4511e;
+}
+
+.item h4 {
+	font-size: 19px;
+	line-height: 1.375em;
+	font-weight: 400;
+	font-style: italic;
+	margin: 70px 0;
+}
+
+.item span {
+	font-style: normal;
+}
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body >
+	
+	
+	<!----======================================================= navigation bar --=========================================================--- -->
+	<nav class="navbar navbar-default  navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Logo</a>
+			</div>
+			<div class="collapse navbar-collapse" id="#myNavbar">
+				<ul class="nav navbar-nav ">
+					<li><a href="#About">About</a></li>
+					<li><a href="#Services">Service</a></li>
+					<li><a href="#Portfolio">Portfolio</a></li>
+					<li><a href="#Pricing">Pricing</a></li>
+					<li><a href="#Contact">Contact</a></li>
+					<li><a href="Quize.jsp">Quiz</a></li>
+
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active" >
+					<a id="login_a"	href="#myModal" data-toggle="modal" class="lmodel">
+						<span type="button" class="btn btn-danger navbar-btn"
+							data-target="#Login" data-role="popup">	
+							<span class="glyphicon glyphicon-log-in"></span>  login </span></a>
+					
+					</li>
+					<li>
+						<form class="navbar-form " action="search.java">
+							<div class="input-group">
+								<input id="search" class="form-control" type="search"
+									placeholder="Search">
+
+								<div class="input-group-btn">
+								<button class="form-control" type="submit">
+										<i class="glyphicon glyphicon-search"></i>
+									</button>
+									<button class="form-control" type="submit">
+										<i class="glyphicon glyphicon-search"></i>
+									</button>
+								</div>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+<!-----===========================================================JUMBOTRON ==============================================================-->
+<style>
+#jumbo{
+ background-image: url("images/jumbo_img.gif");
+}
+
+</style>
+	
+	<div class="jumbotron text-center" id="jumbo">
+		<h1>KV Maths Class</h1>
+		<p>we specialize is matters</p>
+
+		<form class="form-inline">
+			<div class="input-group">
+				<input type="email" class="form-control" size="50"
+					placeholder="EmailAddress" required>
+				<div class="input-group-btn">
+					<button class="btn btn-danger">Subscribe</button>
+				</div>
+
+			</div>
+		</form>
+	</div>
+
+<!-- ============================================= ABOUT==================================================================-->
+	<div id="About" class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8">
+				<h2>About Coaching center</h2>
+				<h4>we provide education for ssc, bank,police ,and other competative exams </h4>
+				<p>we provoed education on competative maths</p>
+				<button class="btn btn-default btn-lg">Get in touch</button>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-signal logo"></span>
+			</div>
+		</div>
+	</div>
+	<!-- new container glyphicon-signal world -->
+	<div class="container-fluid bg-grey">
+		<div class="row">
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-globe logo"></span>
+			</div>
+			<div class="col-sm-8">
+				<h2>Our Values</h2>
+				<h4>
+					<strong>MISSION:</strong> to stand on number one in industy
+				</h4>
+				<p>
+					<strong>VISION:</strong> Our vision is to provide a compatative and quality education
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- =====================================================Add service container==================================================== -->
+	<div id="Services" class="container fluid text-center">
+		<h2>Services</h2>
+		<p>that we offer</p>
+
+		<br>
+		<br>
+		<!-- new row -->
+		<div class="row">
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-off" id="logo-small"></span>
+				<h4>power</h4>
+				<p>Join our police batches</p>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-heart" id="logo-small"></span>
+				<h4>love</h4>
+				<p>our faculty teaches  as a friend</p>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-leaf" id="logo-small"></span>
+				<h4>green</h4>
+				<p>always be positive</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-certificate" id="logo-small"></span>
+				<h4>certificate</h4>
+				<p>we provide certain certification program </p>
+			</div>x
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-wrench" id="logo-small"></span>
+				<h4>hardwork</h4>
+				<p>hard and smart work is always promised</p>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-lock" id="logo-small"></span>
+				<h4>Jpb done</h4>
+				<p>work with us and find your success</p>
+			</div>
+		</div>
+	</div>
+	<!--  =====================================================Add Portfolio Container===============================================-->
+	<div id="Portfolio" class="container-fluid text-center bg-grey">
+		<h2>Portfolio</h2>
+		<h4>we have created</h4>
+		<div class="row text-center">
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="images/login1.jpg" alt="hyd">
+					<p>free Speed Test</p>
+					<p>All text are computer based</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="images/image(port).jpg" alt="hyd">
+					<p>Hindu paper editorial</p>
+					<p>get soft and hard copy of hindu editorial</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="images/port3.jpg" alt="hyd">
+					<p>free Demo</p>
+					<p>get 5 day free demo in all our new batches</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ===================================================crousel TESTIMONIAL================================================== -->
+	<h2>What our Testimonial say</h2>
+	<div id="myCarousel" class="carousel slide text-center"
+		data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+
+
+				<center>
+					<img class="img-circle" src="images/image35(2).jpg" alt="Avatar"
+						style="width: 190px">
+				</center>
+
+				<h4>
+					"This coaching is the best. I am so happy with the result!"<br>
+					<span style="font-style: normal;">raman </span>
+				</h4>
+			</div>
+
+			<div class="item">
+				<div class="form-group">
+					<center>
+						<img src="images/image35(2).jpg" alt="Avatar" style="width: 190px"
+							class="img-circle">
+					</center>
+					<h4>
+						"One word... WOW!!"<br>
+						<span style="font-style: normal;">rahul mishra</span>
+					</h4>
+				</div>
+			</div>
+			<div class="item">
+
+
+				<center>
+					<img src="images/image35(2).jpg" alt="Avatar" style="width: 190px"
+						class="img-circle ">
+				</center>
+				<h4>
+					"Could I... BE any more happy with this coaching?"<br>
+					<span style="font-style: normal;">preetesh</span>
+				</h4>
+
+
+			</div>
+
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" role="button"
+			data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
+			aria-hidden="true"></span> <span class="sr-only">Previous</span>
+		</a> <a class="right carousel-control" href="#myCarousel" role="button"
+			data-slide="next"> <span
+			class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<!--  ==============================================================pannel PRICING==========================================================  -->
+	<div id="Pricing" class="container-fluid">
+		<div class="text-center">
+			<h2>pricing</h2>
+			<h4>choose a plateform that works for you</h4>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h2>SCC</h2>
+						</div>
+						<div class="panel-body">
+							<p>
+								<strong>CPO</strong>
+							</p>
+							<p>
+								<strong>Combined gratuated level</strong>
+							</p>
+							<p>
+								<strong>CHSL(10+2)</strong>
+							</p>
+							<p>
+								<strong>Steno</strong>
+							</p>
+
+						</div>
+						<div class="panel-footer">
+							<h4>Rs 10000</h4>
+							<h4>per month</h4>
+							<button class="btn btn-lg">singn up</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h2>Bank</h2>
+						</div>
+						<div class="panel-body">
+							<p>
+								<strong>PO</strong>
+							</p>
+							<p>
+								<strong>Sepecialist Officer</strong>
+							</p>
+							<p>
+								<strong>RRB</strong>
+							</p>
+							<p>
+								<strong>Clerk</strong>
+							</p>
+
+						</div>
+						<div class="panel-footer">
+							<h4>Rs 7000</h4>
+							<h4>per month</h4>
+							<button class="btn btn-lg">singn up</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h2>Others</h2>
+						</div>
+						<div class="panel-body">
+							<p>
+								<strong>Railway</strong>
+							</p>
+							<p>
+								<strong>police</strong>
+							</p>
+							<p>
+								<strong>UPSC</strong>
+							</p>
+							<p>
+								<strong>PCS</strong>
+							</p>
+
+						</div>
+						<div class="panel-footer">
+							<h4>Rs 40000</h4>
+							<h4>per month</h4>
+							<button class="btn btn-lg">singn up</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =======================================================contact container =============================================================== -->
+	<div id="Contact" class="container-fluid bg-grey">
+		<div class="text-center">
+			<h2>CONTACT</h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-5">
+				<p>
+					Contact us we will get in touch with in 24 hours customer <br>
+					convinnance is priority for us.
+				</p>
+				<p>
+					<span class="glyphicon glyphicon-map-marker"></span>Lucknow,india
+				</p>
+				<p>
+					<span class="glyphicon glyphicon-phone"></span>+91 1541655465
+				</p>
+				<p>
+					<span class="glyphicon glyphicon-envelope"></span>KVclasses@gmail.com
+				</p>
+			</div>
+			<div class="col-sm-7 form-group">
+				<div class="row">
+					<div class="col-sm-6 form-group">
+						<input class="form-control " type="text" placeholder="name"
+							required>
+					</div>
+					<div class="col-sm-6 form-group">
+						<input class="form-control" type="text" name="name"
+							placeholder="email" required>
+					</div>
+				</div>
+				<textarea class="form-control" placeholder="comment" id="comments"
+					name="comments" rows="5"> </textarea>
+				<br>
+
+				<div class="row">
+					<div class="col-sm-12 form-group">
+						<button class="btn btn-default pull-right" type="submit">send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- ===================================================================Add Google Maps===================================================== -->
+	<!--  <div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8">
+				<br/>
+				<div id="googleMap" style="height: 314px; width: 100%;"></div>
+			</div>
+			<div class="col-sm-4">
+				<br/>
+				<div class="embed-responsive embed-responsive-4by3">
+					<iframe width="420" height="315"
+						src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=0">
+					</iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		function myMap() {
+			var myCenter = new google.maps.LatLng(26.4499, 80.3319);
+			var mapProp = {
+				center : myCenter,
+				zoom : 12,
+				scrollwheel : false,
+				draggable : false,
+				mapTypeId : google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("googleMap"),
+					mapProp);
+			var marker = new google.maps.Marker({
+				position : myCenter
+			});
+			marker.setMap(map);
+		}
+	</script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwpMVq-Vokr4-lJZYbppfN4rCtU9lZTB4&callback=myMap">
+		
+	</script>
+	-->
+	<!-- ============================================================---login pop up============================================  -->
+
+	<div class="container">
+		<div class="row">
+			<div class="bs-example">
+
+				<!-- Modal HTML -->
+				<div id="myModal" class="modal fade">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-hidden="true">×</button>
+								<h4 class="modal-title">Login & Register</h4>
+							</div>
+
+							<div class="modal-body">
+								<div class="col-md-6 col-sm-6 no-padng">
+									<div class="model-l">
+										<form method="post" id="logFrm" class="log-frm" name="logFrm">
+											<ul>
+												<li>Email</li>
+												<li><input type="text" placeholder="User ID"
+													id="userName" name="userName" class="form-control"
+													onfocus="checkNullProf();"></li>
+												<li>Password</li>
+												<li><input type="password" placeholder="Password"
+													id="password" name="password" class="form-control"
+													onfocus="checkNullProf();"></li>
+												<li><br />
+												<button  id="logbtn"
+													class="btn btn-default">Submit</button></li>
+												<div style="display:none;" id="loginFail" class="sign">
+													<li><font color="red"> Username or password is
+															incorrect.</font></li>
+												</div>
+											</ul>
+										</form>
+										<div class="clearfix"></div>
+										<form method="post" id="logFrm1" class="log-frm" action="quiz"
+											name="logFrm1">
+											<ul>
+												<li><a class="for-got" onclick="ayantoggle();"
+													href="javascript:;">Forgot your password?</a>
+													<div class="forgot">
+														<ul>
+															<li><p>Enter your Email Address here to receive
+																	a link to change password.</p></li>
+															<li>Email Id</li>
+															<li><input type="text" placeholder="Your email id"
+																id="forgetemailId" class="form-control"
+																name="forgetemailId"></li>
+															<li><button type="submit" class="btn btn-default"
+																	onclick="forgot();">Send Mail</button></li>
+														</ul>
+													</div></li>
+											</ul>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 no-padng">
+									<div class="model-r">
+										<div class="o-r">
+											<span>OR</span>
+										</div>
+										<form method="post" id="userRegisterFrm" class="log-frm" name="userRegisterFrm" action="./registrations" enctype="multipart/form-data">
+											<ul>
+												<li>Name</li>
+												<li><input type="text" placeholder="Name" name="Name"
+													class="form-control"></li>
+												<li>Email</li>
+												<li><input type="text" placeholder="Email Id"
+													name="emailId" class="form-control"></li>
+												<li>Password</li>
+												<li><input type="password" placeholder="Password"
+													name="password" class="form-control"></li>
+												<li>upload image</li>
+												<li><input type="file"
+													placeholder="choose image" name="img"  accept="image/gif,image/jpeg"
+													class="form-control" ></li>
+												<br>
+												<li><button type="submit"
+														class="btn btn-default">Signup Now</button></li>
+												<div style="display: none;" class="sign greenglow">
+													<li><i class="icon-check"></i><br> <font
+														color="red"> User registration successful.<br>
+															Your login Url already send to your email.
+
+													</font></li>
+												</div>
+												<div style="display: none;" id="regnSuc11"
+													class="sign redglow">
+													<li><i class="icon-mail"></i><br> <font
+														color="red"> Email Exist.</font></li>
+												</div>
+											</ul>
+										</form>
+									</div>
+								</div>
+
+								<div class="clearfix"></div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default"
+									data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save
+									changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- ================================================footer================================================================ -->
+	<div class="container-fluid text-center">
+		<style>
+footer .glyphicon {
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #f4511e;
+}
+</style>
+
+		<footer>
+			<span class="glyphicon glyphicon-chevron-up"></span>
+			<p>
+				this website id is designed & mentained by <a
+					href="https://www.w3schools.com" title="visitw3schools">Rajat
+					Katiyar</a>
+			</p>
+
+		</footer>
+	</div>
+	<script type="text/javascript">
+		function ayantoggle() {
+			$(".forgot").slideToggle('slow');
+		}
+	</script>
+</body>
+
+</html>

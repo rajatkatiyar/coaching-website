@@ -1,0 +1,52 @@
+@CHARSET "ISO-8859-1";
+#imges{
+	
+	height:110px;
+	width:110px;
+	border:1px solid #ddd;
+	border-radius:5px;
+}
+img:hover{
+	box-shadow:0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+#progressbar{
+	width:40%;
+}
+#myleftblock{
+	  position:fixed;
+	background-color:LightGray;
+	height:590px;
+	width:314.75px;
+		margin-top:4px;
+}
+
+#myrightblock{
+	 position:fixed;
+background-color:LightGray;
+height:590px;
+	width:459.66px;
+	
+	
+}
+#leftsection{
+background-color:rgb(131, 147, 143);	
+}
+#progressbar{
+	  margin-top: 2px;
+}
+#middleblock{
+	
+	  margin-top: 4px;
+}
+ #info{
+height:163px;
+  padding-top: 27px;
+     z-index: 2;
+	
+} 
+#timewatch{
+
+}
+#allsections{
+	  margin-top: 0px;
+}
